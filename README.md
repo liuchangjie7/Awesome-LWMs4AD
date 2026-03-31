@@ -14,8 +14,8 @@ This is the official repository for the paper **Latent World Models for Autonomo
   - [Behavior Alignment](#behavior-alignment)
 - [Applications](#applications)
 - [Benchmarks](#benchmarks)
-  - [Benchmark Datasets](#Benchmark Datasets)
-  - [Evaluation Metrics](#Evaluation Metrics)
+  - [Benchmark Datasets](#benchmark-datasets)
+  - [Evaluation Metrics](#evaluation-metrics)
 
 - [Citation](#citation)
 
@@ -32,15 +32,17 @@ Our review systematically categorizes LWMs and maintains a live repository of th
 </div>
 
 
+
 ## Methodology
 
 We categorize Latent World Models into three core alignment paradigms based on their training objectives and inference mechanisms.
 
 <div align="center">
   <img src="https://github.com/liuchangjie7/Awesome-LWMs4AD/blob/main/LWMs4AD.assets/chapter3_2.jpg" 
-       alt="photo1"
+       alt="photo1" 
        width="80%"/>
 </div>
+
 
 ### Feature Alignment
 > **Feature Alignment** learns spatio-temporal consistency without pixel reconstruction, filtering out high-frequency sensory noise to focus purely on core semantics and dynamics.
@@ -98,9 +100,10 @@ This section summarizes how Latent World Models are deployed across various auto
 
 <div align="center">
   <img src="https://github.com/liuchangjie7/Awesome-LWMs4AD/blob/main/LWMs4AD.assets/chapter4_1.jpg" 
-       alt="photo1" 
+       alt="photo1"
        width="80%"/>
 </div>
+
 
 | Method                                                       | Application Scenario | Key Contribution                           | Control Type      | Open Source                                                  |
 | :----------------------------------------------------------- | :------------------- | :----------------------------------------- | :---------------- | :----------------------------------------------------------- |
