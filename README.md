@@ -37,7 +37,8 @@ We categorize Latent World Models into three core alignment paradigms based on t
 
 <div align="center">
   <img src="https://github.com/liuchangjie7/Awesome-LWMs4AD/blob/main/LWMs4AD.assets/chapter3_2.jpg" 
-       alt="photo1"  />
+       alt="photo1"
+       width="80%"/>
 </div>
 
 ### Feature Alignment
