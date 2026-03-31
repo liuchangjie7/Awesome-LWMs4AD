@@ -160,7 +160,7 @@ LWMs fundamentally reshape autonomous driving paradigms by discarding pixel-leve
 | Category                   |     Dir.     | Metric        | Full Name                  | Definition / Formula                                         | Target Capability           |
 | :------------------------- | :----------: | :------------ | :------------------------- | :----------------------------------------------------------- | :-------------------------- |
 | **Latent Quality**         |  $\uparrow$  | **LP**        | Linear Probing             | Downstream task accuracy of frozen encoder                   | Semantic Disentanglement    |
-|                            | $\downarrow$ | **LPE**       | Latent Prediction Error    | $\Vert z_{t+1} - \hat{z}_{t+1} \Vert_2^2$ or $1 - \cos(z_{t+1}, \hat{z}_{t+1})$ | Dynamics Consistency        |
+|                            | $\downarrow$ | **LPE**       | Latent Prediction Error    | $\Vert z_{t+1} - \hat{z}_{t+1} \Vert_2^2$ | Dynamics Consistency        |
 |                            |  $\uparrow$  | **LHC**       | Long-Horizon Consistency   | Error decay over multi-step unrolling                        | Temporal Stability          |
 |                            |  $\uparrow$  | **DS**        | Disentanglement Score      | InfoNCE loss for action-environment independence             | Action-Conditioned Fidelity |
 |                            |  $\uparrow$  | **TCS**       | Temporal Consistency       | Variance of transitions across adjacent frames               | Motion Smoothness           |
