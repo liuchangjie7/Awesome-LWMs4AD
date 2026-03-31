@@ -27,7 +27,8 @@ Our review systematically categorizes LWMs and maintains a live repository of th
 
 <div align="center">
   <img src="https://github.com/liuchangjie7/Awesome-LWMs4AD/blob/main/LWMs4AD.assets/chapter1.jpg" 
-       alt="photo1"  />
+       alt="photo1" 
+       width="90%"/>
 </div>
 
 
@@ -97,7 +98,8 @@ This section summarizes how Latent World Models are deployed across various auto
 
 <div align="center">
   <img src="https://github.com/liuchangjie7/Awesome-LWMs4AD/blob/main/LWMs4AD.assets/chapter4_1.jpg" 
-       alt="photo1"  />
+       alt="photo1" 
+       width="80%"/>
 </div>
 
 | Method                                                       | Application Scenario | Key Contribution                           | Control Type      | Open Source                                                  |
