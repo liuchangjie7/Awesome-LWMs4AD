@@ -191,15 +191,3 @@ If you find this repository or our survey useful for your research, please consi
   year={2026}
 }
 ```
-
-## Contributing
-
-Issues and pull requests are welcome for missing papers, datasets, code links, and corrections.
-
-## Contact
-
-Please use GitHub issues for paper updates, repository corrections, and requests.
-
-## License
-
-No LICENSE file is currently included in this repository. Please add a license file before specifying reuse terms.
