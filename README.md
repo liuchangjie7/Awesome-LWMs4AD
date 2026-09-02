@@ -22,7 +22,7 @@ This is the official repository for the paper **Latent World Models for Autonomo
 
 ## Introduction
 
-Autonomous driving is evolving from fragmented modular pipelines toward more integrated system-level architectures. **Latent World Models (LWMs)** provide a compact modeling paradigm for connecting perception, prediction, and decision-making by compressing high-dimensional sensory inputs into latent states that support downstream prediction and planning.
+Autonomous driving is evolving from fragmented modular pipelines toward more integrated system-level architectures for perception--prediction--planning--control coordination. **Latent World Models (LWMs)** provide a compact systems-oriented modeling paradigm for connecting perception, prediction, and decision-making by compressing high-dimensional sensory inputs into latent states that support downstream prediction and planning.
 
 This repository tracks representative papers, datasets, metrics, and open-source projects related to LWMs for autonomous driving. The taxonomy and terminology follow the revised survey manuscript.
 
@@ -79,6 +79,7 @@ We categorize LWMs according to their dominant alignment objectives: **feature a
 | [SafeDreamer](https://arxiv.org/abs/2307.07176) | Continuous Space | RSSM Dreamer Architecture | Reward Safety Penalty | Lagrangian Optimization | [code](https://github.com/PKU-Alignment/SafeDreamer) |
 | [DreamerAD](https://arxiv.org/abs/2603.24587) | Denoised Latent Features | DiT Shortcut Forcing | Latent Reward GRPO | Single Step Latent RL | ❌ |
 | [WorldRFT](https://doi.org/10.1609/aaai.v40i14.38149) | Spatially Aware Latents | Hierarchical Transformer | Planning Aligned RFT | Iterative Refinement | [code](https://github.com/pengxuanyang/WorldRFT) |
+| [SoAD](https://ieeexplore.ieee.org/abstract/document/11516327) | Vector World States | Vector World Model | Safety Value Estimation | Planning Rescoring | ❌ |
 
 ### Behavior Alignment
 
@@ -101,7 +102,7 @@ We categorize LWMs according to their dominant alignment objectives: **feature a
 
 ## Applications
 
-This section summarizes how LWMs are used across autonomous driving tasks, from latent dynamics modeling to predictive driving, predictive control, and safety verification.
+This section summarizes how LWMs are used across autonomous driving tasks, from latent dynamics modeling to anticipatory driving, predictive control, and safety verification.
 
 <div align="center">
   <img src="./LWMs4AD.assets/chapter4_1.jpg"
@@ -116,13 +117,14 @@ This section summarizes how LWMs are used across autonomous driving tasks, from 
 | [OccLLaMA](https://arxiv.org/abs/2409.03272) | Latent Dynamics | Geometry-language-action latent representation | Open-loop | ❌ |
 | [BYOL-Drive](https://www.mdpi.com/2075-1702/13/3/231) | Latent Dynamics | Probabilistic world modeling for representation learning | Open-loop | ❌ |
 | [AdaWorld](https://arxiv.org/abs/2503.18938) | Latent Dynamics | Adaptable latent actions for world modeling | Open-loop | ❌ |
-| [Iso-Dream](https://proceedings.neurips.cc/paper_files/paper/2022/hash/9316769afaaeeaad42a9e3633b14e801-Abstract-Conference.html) | Predictive Driving | Separating controllable and noncontrollable dynamics | Open-loop | [code](https://github.com/panmt/Iso-Dream) |
-| [PIWM](https://arxiv.org/abs/2509.12437) | Predictive Driving | Physical-world simulation prior | Open-loop | [code](https://github.com/TUM-AVS/physics-wm) |
+| [Iso-Dream](https://proceedings.neurips.cc/paper_files/paper/2022/hash/9316769afaaeeaad42a9e3633b14e801-Abstract-Conference.html) | Anticipatory Driving | Separating controllable and noncontrollable dynamics | Open-loop | [code](https://github.com/panmt/Iso-Dream) |
+| [PIWM](https://arxiv.org/abs/2509.12437) | Anticipatory Driving | Physical-world simulation prior | Open-loop | [code](https://github.com/TUM-AVS/physics-wm) |
 | [TOKEN](https://arxiv.org/abs/2407.00959) | Safety Verification | Object-level tokens for long-tail events | Open-loop | [code](https://github.com/thomasrantian/TOKEN_MM-LLM_for_AutoDriving) |
 | [Dreamer](https://arxiv.org/abs/1912.01603) | Predictive Control | Latent imagination for objective-driven control | Closed-loop | [code](https://github.com/danijar/dreamer) |
 | [TD-MPC2](https://arxiv.org/abs/2310.16828) | Predictive Control | Latent-space policy optimization | Closed-loop MPC | [code](https://github.com/nicklashansen/tdmpc2) |
 | [UniAD](https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html) | Predictive Control | Planning-oriented end-to-end alignment | Closed-loop | [code](https://github.com/OpenDriveLab/UniAD) |
 | [SafeDreamer](https://arxiv.org/abs/2307.07176) | Safety Verification | Risk costs integrated into latent imagination | Closed-loop | [code](https://github.com/PKU-Alignment/SafeDreamer) |
+| [SoAD](https://ieeexplore.ieee.org/abstract/document/11516327) | Safety Verification  | Safety-oriented value estimation with world-model rollouts | Closed-loop           | ❌                                                            |
 | [NVIDIA Cosmos](https://arxiv.org/abs/2501.03575) | Safety Verification | Generative simulation and scenario generation | Generative simulation | [code](https://github.com/nvidia-cosmos/cosmos-predict1) |
 
 ## Benchmarks
@@ -191,3 +193,15 @@ If you find this repository or our survey useful for your research, please consi
   year={2026}
 }
 ```
+
+## Contributing
+
+Issues and pull requests are welcome for missing papers, datasets, code links, and corrections.
+
+## Contact
+
+Please use GitHub issues for paper updates, repository corrections, and requests.
+
+## License
+
+A license will be added after publication.
